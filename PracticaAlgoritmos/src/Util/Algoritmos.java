@@ -2,12 +2,27 @@ package Util;
 
 public abstract class Algoritmos {
 
-	public int fibonacci() {
+	public static int fibonacci(int num) {
 
-		return 0;
+		if (num <= 1) {
+			return num;
+
+		} else {
+			int n1 = 0;
+			int n2 = 1;
+
+			for (int i = 2; i <= num; i++) {
+				int fibo = n1 + n2;
+				n1 = n2;
+				n2 = fibo;
+
+			}
+			return n2;
+		}
+
 	}
 
-	public int factorial(int num) {
+	public static int factorial(int num) {
 
 		int Factroial = num;
 
