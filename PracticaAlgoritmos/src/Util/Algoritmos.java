@@ -17,21 +17,20 @@ public abstract class Algoritmos {
 
 		}
 
-		return 0;
+		return Factroial;
 	}
 
+	public static boolean esprimo(int num) {
+		boolean Esprimo = true;
+		if (num / 2 == 0) {
+			System.out.println("El número" + num + " es primo");
+			Esprimo = true;
+		} else {
+			System.out.println("El número " + num + " no es primo");
+			Esprimo = false;
+		}
+		return Esprimo;
 
-	public static boolean esprimo (int num) {
-		 boolean eEsprimo= true;
-	     if(num/2 == 0) {
-	        System.out.println("El número"+num+" es primo");
-	        eEsprimo=true;
-	     } else {
-	        System.out.println("El número "+num+" no es primo");
-	        eEsprimo=false;
-	     }
-		 return true;
-		
 	}
 
 }
