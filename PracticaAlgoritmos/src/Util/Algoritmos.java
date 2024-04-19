@@ -51,12 +51,13 @@ public abstract class Algoritmos {
 	 */
 	public static boolean esprimo(int num) {
 		boolean Esprimo = true;
-		if (num / 2 == 0) {
-			System.out.println("El número" + num + " es primo");
-			Esprimo = true;
-		} else {
+		if (num%2 == 0) {
 			System.out.println("El número " + num + " no es primo");
 			Esprimo = false;
+		} else {
+			System.out.println("El número " + num + " es primo");
+			
+			Esprimo = true;
 		}
 		return Esprimo;
 

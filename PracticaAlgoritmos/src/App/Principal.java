@@ -23,10 +23,10 @@ public class Principal {
 		 **/
 		int[] numeroFibonacci = new int[numeros.length];
 		for (int i = 0; i < numeros.length; i++) {
-			
-			numeroFibonacci[i] = Algoritmos.fibonacci(numeros[i]);	
-			
-}
+
+			numeroFibonacci[i] = Algoritmos.fibonacci(numeros[i]);
+
+		}
 
 		System.out.println("Factoriales del array 'numeros':");
 
@@ -36,10 +36,21 @@ public class Principal {
 		 **/
 		int[] resultadoFactorial = new int[numeros.length];
 		for (int i = 0; i < numeros.length; i++) {
-			 resultadoFactorial [i]= Algoritmos.factorial(numeros[i]);
-			System.out.println(resultadoFactorial[i]+" Factoriales del array 'numeros':"+numeros[i]);
+			resultadoFactorial[i] = Algoritmos.factorial(numeros[i]);
+		}
+
+		/**
+		 * Creamos un array que usara los numeros generados por el array anterior y nos
+		 * dira el si el numero dado es primo o no
+		 */
+
+		boolean[] resultadoPrimos = new boolean[numeros.length];
+		for (int i = 0; i < numeros.length; i++) {
+
+			resultadoPrimos[i] = Algoritmos.esprimo(numeros[i]);
+
 
 		}
-	}
 
+	}
 }
