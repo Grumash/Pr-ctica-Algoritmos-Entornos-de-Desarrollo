@@ -1,7 +1,11 @@
 package Util;
 
 public abstract class Algoritmos {
-
+	/**
+	 * 
+	 * @param num
+	 * @return
+	 */
 	public static int fibonacci(int num) {
 
 		if (num <= 1) {
@@ -22,6 +26,11 @@ public abstract class Algoritmos {
 
 	}
 
+	/**
+	 * 
+	 * @param num
+	 * @return
+	 */
 	public static int factorial(int num) {
 
 		int Factroial = num;
@@ -35,6 +44,11 @@ public abstract class Algoritmos {
 		return Factroial;
 	}
 
+	/**
+	 * 
+	 * @param num
+	 * @return
+	 */
 	public static boolean esprimo(int num) {
 		boolean Esprimo = true;
 		if (num / 2 == 0) {
