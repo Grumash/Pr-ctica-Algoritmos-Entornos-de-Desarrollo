@@ -22,9 +22,22 @@ public class Principal {
 		
 		for (int i = 0; i < numeros.length; i++) {
 		    int numeroFibonacci = Algoritmos.fibonacci(numeros[i]);
-		    System.out.println((i + 1)+" El fibonaccci del número " + numeros[i] + "  es : " + numeroFibonacci);
 		}
+		
+	    
+	    System.out.println("Factoriales del array 'numeros':");
+
+		/** Creamos un array que usara los numeros generados por el array anterior y nos dira el factorial 
+		 * usando la funcion creada en la clase algoritmos
+		**/
+	    for (int i = 0; i < numeros.length; i++) {
+	        int Factorial = Algoritmos.factorial(numeros[i]);
+	        
+		        
+		    }
+	    }
+		
+		
 
 	}
 
-}
