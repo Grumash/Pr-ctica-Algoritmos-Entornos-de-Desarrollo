@@ -28,7 +28,6 @@ public class Principal {
 
 		}
 
-		System.out.println("Factoriales del array 'numeros':");
 
 		/**
 		 * Creamos un array que usara los numeros generados por el array anterior y nos
