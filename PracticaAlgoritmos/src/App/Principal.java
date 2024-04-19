@@ -15,6 +15,15 @@ public class Principal {
 		for (int i = 0; i < numeros.length; i++) {
 		numeros[i] = ran.nextInt(10) + 1;
 		}
+		
+		/** Creamos un array que usara los numeros generados por el array anterior y nos dira su fibonacci 
+		 * usando la funcion de fibonacci creada en la clase algoritmos
+		**/
+		
+		for (int i = 0; i < numeros.length; i++) {
+		    int numeroFibonacci = Algoritmos.fibonacci(numeros[i]);
+		    System.out.println((i + 1)+" El fibonaccci del número " + numeros[i] + "  es : " + numeroFibonacci);
+		}
 
 	}
 
